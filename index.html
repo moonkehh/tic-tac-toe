@@ -31,30 +31,34 @@
 </head>
 <body>
 	<div class="the-board"> 
-		<div class="space">
+		<button class="space" onclick="onButtonClick(0)" id="0"> 
 			x 
-		</div>
-		<div class="space">
+		</button>
+		<button class="space" onclick="onButtonClick(1)" id="1">
 			o
-		</div>
-		<div class="space">
-		</div>
-		<div class="space">
-		</div>
-		<div class="space">
-		</div>
-		<div class="space">
-		</div>
-		<div class="space">
-		</div>
-		<div class="space">
-		</div>
-		<div class="space">
+		</button>
+		<button class="space" onclick="onButtonClick(2)" id="2">
+		</button>
+		<button class="space" onclick="onButtonClick(3)" id="3">
+		</button>
+		<button class="space" onclick="onButtonClick(4)" id="4">
+		</button>
+		<button class="space" onclick="onButtonClick(5)" id="5">
+		</button>
+		<button class="space" onclick="onButtonClick(6)" id="6">
+		</button>
+		<button class="space" onclick="onButtonClick(7)" id="7">
+		</button>
+		<button class="space" onclick="onButtonClick(8)" id="8">
+		</button>
 		</div>
 		
 	</div>
 	<script> 
-		console.log("hello moonkehh"); 
+		const onButtonClick = (buttonId) => {
+			console.log(`hello ${buttonId}`);	
+		};
+		
 
 	</script> 
 

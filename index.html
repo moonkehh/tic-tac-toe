@@ -32,10 +32,10 @@
 <body>
 	<div class="the-board"> 
 		<button class="space" onclick="onButtonClick(0)" id="0"> 
-			x 
+			 
 		</button>
 		<button class="space" onclick="onButtonClick(1)" id="1">
-			o
+
 		</button>
 		<button class="space" onclick="onButtonClick(2)" id="2">
 		</button>
@@ -55,11 +55,28 @@
 		
 	</div>
 	<script> 
+		let board = ['x','o','','x','','','o','o',''];
+		const updateHtmlFromState = () => {
+			board.forEach((valueOfTheSpace,index) =>{ 
+				const domElement = document.getElementById(`${index}`);
+				domElement.innerHTML = valueOfTheSpace; 
+				domElement.disabled = valueOfTheSpace !== ''; 
+				
+			});			
+		}; 
+		
+	
+		
+		
+		
+		
+		
 		const onButtonClick = (buttonId) => {
 			console.log(`hello ${buttonId}`);	
 		};
 		
-
+		updateHtmlFromState(); 
+		
 	</script> 
 
 </body>
